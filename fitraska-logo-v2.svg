@@ -1,0 +1,32 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#0A0A0A"/>
+
+  <!--
+    F mark anatomy (matching Image 3):
+    - Left column: two right triangles stacked, tips pointing inward (right)
+    - Right column: two semicircles, flat side left, top larger than bottom
+    - Thin gap between top and bottom half (horizontal)
+    - Thin gap between left triangles and right semicircles (vertical)
+
+    Mark bounds: x 110–270, y 95–305  (160w × 210h)
+    Split point (horizontal gap): y=197–203
+    Split point (vertical gap): x=182–188
+  -->
+
+  <!-- TOP-LEFT triangle: ◣ shape, hypotenuse goes top-right to bottom-left -->
+  <!-- Points: top-left (110,95), bottom-left (110,197), top-right (182,95) -->
+  <polygon points="110,95 110,197 182,95" fill="white"/>
+
+  <!-- TOP-RIGHT semicircle: flat left edge from (188,95) to (188,197), bulges right -->
+  <!-- Diameter = 102, radius = 51, center = (188, 146) -->
+  <path d="M 188 95 L 188 197 A 51 51 0 0 0 188 95 Z" fill="white"/>
+
+  <!-- BOTTOM-LEFT triangle: ◤ shape, hypotenuse goes bottom-right to top-left -->
+  <!-- Points: top-left (110,203), bottom-left (110,305), bottom-right (182,305) -->
+  <polygon points="110,203 110,305 182,305" fill="white"/>
+
+  <!-- BOTTOM-RIGHT semicircle: smaller, flat left from (188,213) to (188,295), bulges right -->
+  <!-- Diameter = 82, radius = 41, center = (188, 254) -->
+  <path d="M 188 213 L 188 295 A 41 41 0 0 0 188 213 Z" fill="white"/>
+
+</svg>
